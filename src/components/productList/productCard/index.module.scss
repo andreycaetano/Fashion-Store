@@ -1,0 +1,149 @@
+.productCard__container {
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-radius: 10px;
+  padding: 1rem;
+  box-sizing: border-box;
+
+  button {
+    width: 3.75rem;
+  }
+
+  img {
+    border-radius: var(--radius-1);
+  }
+
+  &:hover {
+    scale: 1.01;
+    transition: 0.2s;
+    box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.productCard__btnContainer {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.ProductCardModal__container {
+  max-width: 26rem;
+  padding: 1%;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  position: relative;
+
+  img {
+    height: 5rem;
+    object-fit: contain;
+  }
+
+  button {
+    position: absolute;
+    right: 2%;
+  }
+
+  &:hover {
+    background-color: var(--gray);
+    transition: 200ms;
+  }
+}
+
+.ProductCardModal__info {
+  margin-left: 1rem;
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.ProductCardModal__counter {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.ProductCardAdminView__container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0 auto;
+
+  position: relative;
+  padding: 1%;
+  border-radius: 6px;
+  img {
+    height: 30rem;
+    width: 22rem;
+  }
+  &:hover {
+    background-color: var(--gray);
+    transition: 200ms;
+  }
+  img {
+    border-radius: var(--radius-1);
+  }
+}
+
+.ProductCardAdminView__Btncontainer {
+  display: flex;
+  gap: 1rem;
+
+  position: absolute;
+
+  right: 7.625rem;
+  bottom: 7.8125rem;
+
+  .icon {
+    cursor: pointer;
+  }
+}
+
+.ProductCardAdminView__info {
+  margin-top: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  p {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .ProductCardAdminView__container {
+    width: 100%;
+    height: 210px;
+
+    padding: 1rem;
+
+    margin: initial;
+
+    flex-direction: row;
+    gap: 2rem;
+
+    img {
+      width: 11.25rem;
+      height: max-content;
+    }
+
+    .ProductCardAdminView__info {
+      align-items: start;
+    }
+  }
+
+  .ProductCardAdminView__Btncontainer {
+    right: 1rem;
+    top: 6rem;
+  }
+}

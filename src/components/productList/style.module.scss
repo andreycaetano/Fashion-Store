@@ -1,0 +1,25 @@
+.section {
+  width: 90%;
+  margin: 3rem 0 0 0;
+
+  .ul {
+    margin-top: 1rem;
+    height: 40rem;
+    display: flex;
+    overflow: auto;
+    gap: 0.5rem;
+  }
+
+  li {
+    max-width: 90%;
+    height: fit-content;
+  }
+}
+
+@media (max-width: 400px) {
+  .section {
+    .ul {
+      height: 37rem;
+    }
+  }
+}

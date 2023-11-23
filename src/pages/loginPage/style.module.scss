@@ -1,0 +1,23 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 90%;
+  gap: 1.8rem;
+
+  img {
+    width: 90%;
+    max-height: 35rem;
+  }
+}
+
+@media (min-width: 1218px) {
+  .section {
+    flex-direction: row;
+    width: initial;
+
+    img {
+      width: initial;
+    }
+  }
+}

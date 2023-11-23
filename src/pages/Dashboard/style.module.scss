@@ -1,0 +1,29 @@
+.nav__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ul {
+    display: flex;
+    gap: 1.5rem;
+  }
+}
+
+.admin__welcome {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 67vh;
+
+  margin: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .admin__welcome {
+    margin: 0 5rem;
+  }
+  .nav__container {
+    justify-content: flex-start;
+    margin-left: 5rem;
+  }
+}

@@ -1,0 +1,19 @@
+.content__container {
+  flex-direction: column;
+  width: 90%;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+
+  img {
+    width: 90%;
+    max-height: 35rem;
+  }
+}
+
+@media (min-width: 1045px) {
+  .content__container {
+    flex-direction: row;
+  }
+}
