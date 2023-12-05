@@ -26,6 +26,8 @@ Bem-vindo ao Fashion Store, um projeto que reúne estilo e praticidade! Esta apl
 
 6. Integração de API para Manipulação de Dados:
 - Utilizamos uma API para fornecer dados dinâmicos, enriquecendo a experiência do usuário com informações em tempo real.
+
+7:  Rotas privadas utilizando URL's /login e /register
 <hr>
 
 ### Tecnologias utilizadas: 
